@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sanjhana - BCom Student Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    max-width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.08);
+    padding: 2.5rem 3rem;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    border-bottom: 3px solid #2773e0;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2773e0;
+    letter-spacing: 1.1px;
+  }
+  header p {
+    color: #555;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    font-size: 1.1rem;
+  }
+  header a {
+    color: #2773e0;
+    text-decoration: none;
+  }
+  header a:hover,
+  header a:focus {
+    text-decoration: underline;
+  }
+
+  section {
+    margin-bottom: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    color: #2773e0;
+    border-bottom: 3px solid #2773e0;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 1.4rem;
+  }
+
+  .about p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.12rem;
+    color: #333;
+    text-align: center;
+  }
+
+  ul.education-list {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  ul.education-list li {
+    background-color: #eaf2ff;
+    border-left: 6px solid #2773e0;
+    margin-bottom: 1.2rem;
+    padding: 1rem 1.2rem;
+    font-weight: 600;
+    color: #164a91;
+    box-shadow: 0 6px 18px rgba(39,115,224,0.18);
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  ul.education-list li:hover,
+  ul.education-list li:focus-within {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(39,115,224,0.28);
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+  }
+
+  .skill {
+    background-color: #2773e0;
+    color: white;
+    border-radius: 999px;
+    padding: 0.8rem 1.7rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 15px rgba(39,115,224,0.5);
+    cursor: default;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  }
+
+  .skill:hover,
+  .skill:focus {
+    background-color: #1a4cb7;
+    transform: scale(1.1);
+    outline: none;
+  }
+
+  .projects {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .project-item {
+    background: #f0f6ff;
+    border-left: 6px solid #2773e0;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1.6rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(39,115,224,0.12);
+    transition: box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .project-item:hover,
+  .project-item:focus-within {
+    box-shadow: 0 12px 30px rgba(39,115,224,0.25);
+  }
+
+  .project-title {
+    font-weight: 700;
+    color: #164a91;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+  .project-description {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width:600px) {
+    .container {
+      padding: 1.8rem 1.5rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+    }
+    .skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Sanjhana</h1>
+      <p>Phone: 70196 88352 | Email: <a href="mailto:sanjhana.km2003@gmail.com">sanjhana.km2003@gmail.com</a></p>
+    </header>
+
+    <section class="about" aria-label="About Me">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and dedicated Bachelor of Commerce student specializing in financial accounting and reporting. I strive to blend academic knowledge with practical skills to excel in the finance sector and make an impact. Eager to learn, collaborate, and contribute to professional environments.
+      </p>
+    </section>
+
+    <section class="education" aria-label="Education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>Charans Degree College - Bachelor of Commerce (BCom)</li>
+        <li>PUC - New Baldwin International College</li>
+      </ul>
+    </section>
+
+    <section class="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills" role="list">
+        <span class="skill" role="listitem" tabindex="0">Financial Accounting</span>
+        <span class="skill" role="listitem" tabindex="0">Financial Reporting</span>
+        <span class="skill" role="listitem" tabindex="0">Microsoft Excel</span>
+        <span class="skill" role="listitem" tabindex="0">Data Analysis</span>
+        <span class="skill" role="listitem" tabindex="0">Communication</span>
+      </div>
+    </section>
+
+    <section class="projects" aria-label="Projects">
+      <h2>Projects</h2>
+      <article class="project-item" tabindex="0">
+        <h3 class="project-title">Financial Statement Analysis</h3>
+        <p class="project-description">
+          Conducted detailed analysis of balance sheets and income statements of several companies as part of my coursework, delivering insights on financial health and performance.
+        </p>
+      </article>
+      <article class="project-item" tabindex="0">
+        <h3 class="project-title">Accounting Spreadsheet Automation</h3>
+        <p class="project-description">
+          Developed automated Excel spreadsheets for tracking and reporting financial transactions to improve accuracy and reduce manual efforts.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
